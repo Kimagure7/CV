@@ -18,7 +18,7 @@ jobs:
           root_file: ${{ env.FILE }}
           working_directory: ${{ env.DIR }}
       - name: move
-        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
+        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/ && echo "cv.fr4nk1in.top" > ./github_artifacts/CNAME
       - name: Upload pdf as artifact
         uses: actions/upload-artifact@v2
         with:
