@@ -4,61 +4,69 @@
 \moderncvcolor{blue}
 \nopagenumbers{}
 
+\usepackage{ctex}
+
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
 \recomputelengths
 
-\firstname{Ziyi}
-\familyname{Zhao}
-\address{No. 373, Huangshan Rd., Shushan District}{Hefei, Anhui Province, China 230022}
+\firstname{赵}
+\familyname{子毅}
 \phone{(+86)~136~6243~7820}
 \email{re2477036@mail.ustc.edu.cn}
+\extrainfo{\githubsocialsymbol \href{https://github.com/Kimagure7}{Kimagure7}}
 
 \begin{document}
 \makecvtitle
 
-\section{Education}
-\cventry{2020~--~2024 (expected)}{B.S. in Computer Science and Technology}{University of Science and Technology of China}{China}{}{
+\section{教育背景}
+\cventry{2020~--~2024}{中国科学技术大学}{计算机科学与技术专业}{}{}{
     \begin{itemize}
-        \item School of the Gifted Young
-        \item \textbf{GPA: 3.74/4.30}, Rank: 50/262
-        \item Relevant coursework:
+        \item 总绩点: 3.73/4.30, 专业排名: 50/262
+        \item 相关课程:
               \begin{itemize}
-                  \item Compiler (95)
-                  \item Operating System H (96)
-                  \item Computer Network (95)
-                  \item Data Structure (90)
-                  \item Linear Algebra B1 (96)
+                  \item 编译原理与技术 (96)
+                  \item 算法基础 (94)
+                  \item 操作系统原理与设计 (90)
+                  \item 计算机组成原理 (91)
+                  \item 数据结构 (92)
               \end{itemize}
     \end{itemize}
 }
 
-\section{Projects}
-
-\cventry{May 2022}{Graph Network Disk with Prometheus}{term project of OSH}{}{}{
+\section{项目经历}
+\cventry{2023.01}{CminusF 编译器}{编译原理与技术课程实验}{}{}{
     \begin{itemize}
-        \item User can see their files through normal view and graphical view, which makes the relation of files more clear.
-        \item All user action can be done on web.
-        \item Storage and Calculation can be implemented in a distributed manner
+        \item 实现了其前端 parser, IR 生成和部分中端代码优化.
+        \item 实现了基于数据流分析的 GVN 分析, 用于常量传播和删除冗余代码.
+        \item 使用 LLVM 后端生成机器码.
     \end{itemize}
 }
 
-\section{Awards and Scholarships}
+\cventry{2022.05}{RISC-V CPU 核}{计算机组成原理课程大作业}{}{}{
+    \begin{itemize}
+        \item 五级流水线的 32-bit RISC-V CPU 核心, 带有 2-bit 动态分支预测器.
+        \item 实现了大部分 RV32I 指令, 包括算术, 逻辑, 访存和控制指令.
+        \item 能正确在 FPGA 开发板上运行.
+    \end{itemize}
+}
 
-\cvitem{Oct 2023}{Outstanding Student Scholarship(Silver)}
-\cvitem{Oct 2022}{Outstanding Student Scholarship(Silver)}
+\section{获奖荣誉}
 
-\section{Skills}
-\subsection{Programming Languages}
-\cvitem{Skilled}{C/C++, Python, Markdown}
-\cvitem{Familiar}{Verilog}
+\cvitem{2023.01}{江淮蔚来汽车奖学金}
+\cvitem{2022.01}{陈林义奖学金}
+\cvitem{2020.12}{优秀学生奖学金银奖}
 
-\subsection{Tools and Operating Systems}
-\cvitem{Experienced}{Git}
-\cvitem{Familiar}{Linux, Windows}
+\vspace{1em}
 
-\subsection{Languages}
-\cvitem{Native}{Mandarin Chinese}
-\cvitem{Fluent}{English, Japanese}
+\cvitem{2022.4}{中国科学技术大学程序设计竞赛 (USTCPC) Div 2 组别三等奖}
+
+\section{专业技能}
+\subsection{编程语言}
+\cvitem{熟练}{C/C++, Python, Verilog, Markdown, \LaTeX}
+\cvitem{了解}{Rust, Lua, Shell Script}
+
+\subsection{英语}
+\cvitem{}{四级 620, 六级 546}
 
 \end{document}
